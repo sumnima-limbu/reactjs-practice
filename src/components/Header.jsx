@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 const Header = (props) => {
   console.log("PROPS", props);
@@ -15,6 +16,12 @@ const Header = (props) => {
 
 export default Header;
 
+Header.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired,
+};
+
 Header.defaultProps = {
-  name: "Sita",
+  name: "Nilima",
+  age: 24,
 };
