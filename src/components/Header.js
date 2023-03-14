@@ -8,8 +8,13 @@ const Header = (props) => {
     <div>
       <h1>Header</h1>
       <p>{counter}</p>
+      <button>{props.name}</button>
     </div>
   );
 };
 
 export default Header;
+
+Header.defaultProps = {
+  name: "Sita",
+};
