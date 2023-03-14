@@ -1,13 +1,12 @@
 import "../App.css";
 import { useState } from "react";
 
-const names = ["Arjun", "Ram", "Hari", "Bhuwan"];
+// const names = ["Arjun", "Ram", "Hari", "Bhuwan"];
 function Counter() {
   const [name, setName] = useState("Sumnima");
   const [counter, setCounter] = useState(0);
 
   function clickme() {
-    console.log(name);
     setName("Sawarloon");
   }
 
@@ -29,9 +28,9 @@ function Counter() {
       <button onClick={decrease}>-</button>
       <button onClick={increase}>+</button>
 
-      {names.map((element) => {
-        return <p>{element}</p>;
-      })}
+      {/* {names.map((element, i) => {
+        return <p key={i}>{element}</p>;
+      })} */}
     </div>
   );
 }
