@@ -1,15 +1,8 @@
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
+body {
+  text-align: center;
 }
 
-.content {
+.App {
   display: flex;
-  flex: 0.3;
-}
-
-.main-content {
-  display: flex;
-  flex: 0.7;
+  justify-content: center;
 }

@@ -1,25 +1,23 @@
+import { useSelector } from "react-redux";
 import "./App.css";
-// import CounterClass from "./components/CounterClass";
-// import Counter from "./components/Counter";
-// import TodoClass from "./components/TodoClass";
-// import Todo from "./components/Todo";
-import PropTypes from "prop-types";
-import Header from "./components/Header";
+import Component1 from "./components/multilevel/Component1";
 
 function App() {
+  const { name, counter } = useSelector((state) => state.app);
+
   return (
     <div className="App">
-      {/* <Counter />
-      <CounterClass /> */}
+      <p>Counter: {counter}</p>
+      <p>Name: {name}</p>
+      <Component1 />
 
-      {/* <Todo />
-      <TodoClass /> */}
-
-      <Header />
+      {/* <Routes>
+        <Route path="" element={<PostHome />} />
+        <Route path="posts/:postId" element={<Post />} />
+        <Route path="*" element={<NoMatch />} />
+      </Routes> */}
     </div>
   );
 }
 
 export default App;
-
-App.propTypes = {};
